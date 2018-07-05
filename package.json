@@ -1,6 +1,6 @@
 {
   "name": "async-fs-wrapper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Async wrappers for node's filesystem module",
   "main": "dist/main/index.js",
   "repository": "git@github.com:Recombix/async-fs.git",
