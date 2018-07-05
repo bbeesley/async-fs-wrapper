@@ -18,10 +18,12 @@ Async wrappers for node's filesystem module
     -   [Parameters](#parameters-2)
 -   [asyncCopyFile](#asynccopyfile)
     -   [Parameters](#parameters-3)
+-   [asyncCopyAllFilesInDir](#asynccopyallfilesindir)
+    -   [Parameters](#parameters-4)
 
 ### asyncReadFile
 
-[src/main/index.js:8-10](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L8-L10 "Source code on GitHub")
+[src/main/index.js:8-10](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L8-L10 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -33,7 +35,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncWriteFile
 
-[src/main/index.js:18-20](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L18-L20 "Source code on GitHub")
+[src/main/index.js:18-20](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L18-L20 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -46,7 +48,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncReaddir
 
-[src/main/index.js:27-29](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L27-L29 "Source code on GitHub")
+[src/main/index.js:27-29](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L27-L29 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -58,7 +60,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyFile
 
-[src/main/index.js:37-39](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L37-L39 "Source code on GitHub")
+[src/main/index.js:37-39](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L37-L39 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -68,3 +70,16 @@ Copy a file asynchronously
 -   `to` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [URL](https://developer.mozilla.org/docs/Web/API/URL/URL))** The dest file
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>** Resolves with true if the copy is successful
+
+### asyncCopyAllFilesInDir
+
+[src/main/index.js:47-53](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L47-L53 "Source code on GitHub")
+
+Copy all files in one directory to another directory
+
+#### Parameters
+
+-   `from` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Input directory
+-   `to` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Output directory
+
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves when the op is complete
