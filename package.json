@@ -6,6 +6,12 @@
   "repository": "git@github.com:Recombix/async-fs.git",
   "author": "Bill Beesley <bill@recombix.com>",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=8.5"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "compile": "BABEL_ENV=production babel src --out-dir dist --copy-files --source-maps --extensions \".js\" --ignore \"src/test/**\"",

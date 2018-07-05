@@ -21,7 +21,7 @@ Async wrappers for node's filesystem module
 
 ### asyncReadFile
 
-[src/main/index.js:8-10](https://github.com/Recombix/async-fs/blob/52b8054b0ffd9ae806bf8bf6d54cf59b5cd1edd1/src/main/index.js#L8-L10 "Source code on GitHub")
+[src/main/index.js:8-10](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L8-L10 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -33,7 +33,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncWriteFile
 
-[src/main/index.js:18-20](https://github.com/Recombix/async-fs/blob/52b8054b0ffd9ae806bf8bf6d54cf59b5cd1edd1/src/main/index.js#L18-L20 "Source code on GitHub")
+[src/main/index.js:18-20](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L18-L20 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -46,7 +46,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncReaddir
 
-[src/main/index.js:27-29](https://github.com/Recombix/async-fs/blob/52b8054b0ffd9ae806bf8bf6d54cf59b5cd1edd1/src/main/index.js#L27-L29 "Source code on GitHub")
+[src/main/index.js:27-29](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L27-L29 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -58,7 +58,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyFile
 
-[src/main/index.js:37-39](https://github.com/Recombix/async-fs/blob/52b8054b0ffd9ae806bf8bf6d54cf59b5cd1edd1/src/main/index.js#L37-L39 "Source code on GitHub")
+[src/main/index.js:37-39](https://github.com/Recombix/async-fs/blob/3d10612d659049679d0b0db90c46b62818c83caf/src/main/index.js#L37-L39 "Source code on GitHub")
 
 Copy a file asynchronously
 
