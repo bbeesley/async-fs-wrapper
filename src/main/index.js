@@ -37,3 +37,17 @@ export const asyncReaddir = (path) =>
 export const asyncCopyFile = (from, to) =>
     new Promise((resolve, reject) =>
         copyFile(from, to, (err) => (err ? reject(err) : resolve(true))));
+
+/**
+ * Copy all files in one directory to another directory
+ * @param {string}  from    Input directory
+ * @param {string}  to      Output directory
+ * @returns {Promise<void>} Resolves when the op is complete
+ */
+export const asyncCopyAllFilesInDir = async (from, to) => {
+    const inputDir = from.replace(/\/$/, '');
+    const outputDir = to.replace(/\/$/, '');
+    const rawFileNames = await asyncReaddir(inputDir);
+    await Promise.all(rawFileNames.map((filename) =>
+        asyncCopyFile(`${inputDir}/${filename}`, `${outputDir}/${filename}`)));
+};
