@@ -19,8 +19,8 @@
     "lint": "./node_modules/.bin/eslint src/**  --fix",
     "mocha": "BABEL_ENV=test nyc mocha --require ./src/test/index.js 'src/test/**/*.test.js'",
     "pretest": "run-p clean lint",
-    "posttest": "yarn compile",
-    "test": "BABEL_ENV=test #yarn mocha"
+    "posttest": "npm run compile",
+    "test": "BABEL_ENV=test #npm run mocha"
   },
   "devDependencies": {
     "arrow-mocha": "^1.0.1",
