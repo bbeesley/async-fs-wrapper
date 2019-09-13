@@ -23,7 +23,7 @@ Async wrappers for node's filesystem module
 
 ### asyncReadFile
 
-[src/main/index.js:8-10](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L8-L10 "Source code on GitHub")
+[src/main/index.js:8-10](https://git@github.com/:bbeesley/async-fs/blob/4c9e5746d3dfd6f67598b6721e3390417fcfd42e/src/main/index.js#L8-L10 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -35,7 +35,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncWriteFile
 
-[src/main/index.js:18-20](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L18-L20 "Source code on GitHub")
+[src/main/index.js:18-20](https://git@github.com/:bbeesley/async-fs/blob/4c9e5746d3dfd6f67598b6721e3390417fcfd42e/src/main/index.js#L18-L20 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -48,7 +48,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncReaddir
 
-[src/main/index.js:27-29](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L27-L29 "Source code on GitHub")
+[src/main/index.js:27-29](https://git@github.com/:bbeesley/async-fs/blob/4c9e5746d3dfd6f67598b6721e3390417fcfd42e/src/main/index.js#L27-L29 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -60,7 +60,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyFile
 
-[src/main/index.js:37-39](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L37-L39 "Source code on GitHub")
+[src/main/index.js:37-39](https://git@github.com/:bbeesley/async-fs/blob/4c9e5746d3dfd6f67598b6721e3390417fcfd42e/src/main/index.js#L37-L39 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -73,7 +73,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyAllFilesInDir
 
-[src/main/index.js:47-53](https://github.com/Recombix/async-fs/blob/40284f83b7157bfdf13b146a3857a9b7c46a5876/src/main/index.js#L47-L53 "Source code on GitHub")
+[src/main/index.js:47-53](https://git@github.com/:bbeesley/async-fs/blob/4c9e5746d3dfd6f67598b6721e3390417fcfd42e/src/main/index.js#L47-L53 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
