@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "documentation": "^8.0.0"
+    "documentation": "^12.1.4"
   }
 }
