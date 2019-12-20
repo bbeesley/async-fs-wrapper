@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/bbeesley/async-fs/compare/v1.2.0...v1.3.0) (2019-12-20)
+
+
+### Features
+
+* migrate to typescript ([417c66f](https://github.com/bbeesley/async-fs/commit/417c66f360a32faa13e9b2022742d6e511ec30b8))
+
 # [1.2.0](https://github.com/bbeesley/async-fs/compare/v1.1.0...v1.2.0) (2019-12-20)
 
 
