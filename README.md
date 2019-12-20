@@ -25,63 +25,63 @@ Async wrappers for node's filesystem module
 
 ### asyncReadFile
 
-[src/main/index.ts:10-13](https://github.com/bbeesley/async-fs/blob/e793f1ff9f4f662fd2c1237d0e44790fc60ac09e/src/main/index.ts#L10-L13 "Source code on GitHub")
+[src/main/index.ts:10-13](https://github.com/bbeesley/async-fs/blob/4c1871065ced3d08cbe1c1cb2849d7d5b4c9aab8/src/main/index.ts#L10-L13 "Source code on GitHub")
 
 Reads a file asynchronously
 
 #### Parameters
 
--   `pointer` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [URL](https://developer.mozilla.org/docs/Web/API/URL/URL) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** Path to the file to be read
+-   `pointer` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** Path to the file to be read
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))>** Resolves to the content of the file
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>** Resolves to the content of the file
 
 ### asyncWriteFile
 
-[src/main/index.ts:21-24](https://github.com/bbeesley/async-fs/blob/e793f1ff9f4f662fd2c1237d0e44790fc60ac09e/src/main/index.ts#L21-L24 "Source code on GitHub")
+[src/main/index.ts:21-24](https://github.com/bbeesley/async-fs/blob/4c1871065ced3d08cbe1c1cb2849d7d5b4c9aab8/src/main/index.ts#L21-L24 "Source code on GitHub")
 
 Writes a file asynchronously
 
 #### Parameters
 
--   `pointer` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [URL](https://developer.mozilla.org/docs/Web/API/URL/URL) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** Path to the file to be written
+-   `pointer` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** Path to the file to be written
 -   `content` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [Uint8Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array))** Content to write to the file
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>** Resolves with true if the write was successful
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves with true if the write was successful
 
 ### asyncReaddir
 
-[src/main/index.ts:31-34](https://github.com/bbeesley/async-fs/blob/e793f1ff9f4f662fd2c1237d0e44790fc60ac09e/src/main/index.ts#L31-L34 "Source code on GitHub")
+[src/main/index.ts:31-34](https://github.com/bbeesley/async-fs/blob/4c1871065ced3d08cbe1c1cb2849d7d5b4c9aab8/src/main/index.ts#L31-L34 "Source code on GitHub")
 
 Reads a directory asynchronously
 
 #### Parameters
 
--   `path` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [URL](https://developer.mozilla.org/docs/Web/API/URL/URL))** The directory to list the contents of
+-   `path` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** The directory to list the contents of
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)> | [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Buffer](https://nodejs.org/api/buffer.html)>)>** Array of filenames
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>>** Array of filenames
 
 ### asyncCopyFile
 
-[src/main/index.ts:42-45](https://github.com/bbeesley/async-fs/blob/e793f1ff9f4f662fd2c1237d0e44790fc60ac09e/src/main/index.ts#L42-L45 "Source code on GitHub")
+[src/main/index.ts:42-45](https://github.com/bbeesley/async-fs/blob/4c1871065ced3d08cbe1c1cb2849d7d5b4c9aab8/src/main/index.ts#L42-L45 "Source code on GitHub")
 
 Copy a file asynchronously
 
 #### Parameters
 
--   `from` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [URL](https://developer.mozilla.org/docs/Web/API/URL/URL))** The src file
--   `to` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [URL](https://developer.mozilla.org/docs/Web/API/URL/URL))** The dest file
+-   `from` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** The src file
+-   `to` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** The dest file
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)>** Resolves with true if the copy is successful
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves with true if the copy is successful
 
 ### asyncCopyAllFilesInDir
 
-[src/main/index.ts:53-67](https://github.com/bbeesley/async-fs/blob/e793f1ff9f4f662fd2c1237d0e44790fc60ac09e/src/main/index.ts#L53-L67 "Source code on GitHub")
+[src/main/index.ts:53-67](https://github.com/bbeesley/async-fs/blob/4c1871065ced3d08cbe1c1cb2849d7d5b4c9aab8/src/main/index.ts#L53-L67 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
 #### Parameters
 
--   `from` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Input directory
--   `to` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Output directory
+-   `from` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** Input directory
+-   `to` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** Output directory
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves when the op is complete
