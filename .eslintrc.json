@@ -3,11 +3,13 @@
   "extends": "airbnb",
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "plugins": [
     "flowtype",
-    "import"
+    "import",
+    "jest"
   ],
   "rules": {
     "no-restricted-syntax": [

@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/bbeesley/async-fs.svg?style=svg)](https://circleci.com/gh/bbeesley/async-fs) [![codecov](https://codecov.io/gh/bbeesley/async-fs/branch/master/graph/badge.svg)](https://codecov.io/gh/bbeesley/async-fs) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 # async-fs-wrapper
 
 ## description
@@ -23,7 +24,7 @@ Async wrappers for node's filesystem module
 
 ### asyncReadFile
 
-[src/main/index.js:8-10](https://github.com/bbeesley/async-fs/blob/241a77ff05031a85a6e592729609f04a9d2b789a/src/main/index.js#L8-L10 "Source code on GitHub")
+[src/main/index.js:8-10](https://github.com/bbeesley/async-fs/blob/308904c3c2f2f78ba77ae89fe859889c23a77e5c/src/main/index.js#L8-L10 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -35,7 +36,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncWriteFile
 
-[src/main/index.js:18-20](https://github.com/bbeesley/async-fs/blob/241a77ff05031a85a6e592729609f04a9d2b789a/src/main/index.js#L18-L20 "Source code on GitHub")
+[src/main/index.js:18-20](https://github.com/bbeesley/async-fs/blob/308904c3c2f2f78ba77ae89fe859889c23a77e5c/src/main/index.js#L18-L20 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -48,7 +49,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncReaddir
 
-[src/main/index.js:27-29](https://github.com/bbeesley/async-fs/blob/241a77ff05031a85a6e592729609f04a9d2b789a/src/main/index.js#L27-L29 "Source code on GitHub")
+[src/main/index.js:27-29](https://github.com/bbeesley/async-fs/blob/308904c3c2f2f78ba77ae89fe859889c23a77e5c/src/main/index.js#L27-L29 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -60,7 +61,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyFile
 
-[src/main/index.js:37-39](https://github.com/bbeesley/async-fs/blob/241a77ff05031a85a6e592729609f04a9d2b789a/src/main/index.js#L37-L39 "Source code on GitHub")
+[src/main/index.js:37-39](https://github.com/bbeesley/async-fs/blob/308904c3c2f2f78ba77ae89fe859889c23a77e5c/src/main/index.js#L37-L39 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -73,7 +74,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyAllFilesInDir
 
-[src/main/index.js:47-53](https://github.com/bbeesley/async-fs/blob/241a77ff05031a85a6e592729609f04a9d2b789a/src/main/index.js#L47-L53 "Source code on GitHub")
+[src/main/index.js:47-53](https://github.com/bbeesley/async-fs/blob/308904c3c2f2f78ba77ae89fe859889c23a77e5c/src/main/index.js#L47-L53 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
