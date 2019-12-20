@@ -1,5 +1,6 @@
 {
     "presets": [
+        "@babel/preset-typescript",
         [
             "@babel/preset-env",
             {
@@ -12,7 +13,6 @@
         ]
     ],
     "plugins": [
-        "@babel/plugin-transform-flow-strip-types",
         "@babel/plugin-transform-runtime"
     ],
     "env": {
