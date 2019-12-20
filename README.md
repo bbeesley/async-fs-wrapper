@@ -25,7 +25,7 @@ Async wrappers for node's filesystem module
 
 ### asyncReadFile
 
-[src/main/index.js:8-10](https://github.com/bbeesley/async-fs/blob/e8086878f261c7590bbacb4a0ad829f9fa099543/src/main/index.js#L8-L10 "Source code on GitHub")
+[src/main/index.ts:10-13](https://github.com/bbeesley/async-fs/blob/53e02259be0aba3b70a870eb1a076bddc5153b15/src/main/index.ts#L10-L13 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -37,7 +37,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncWriteFile
 
-[src/main/index.js:18-20](https://github.com/bbeesley/async-fs/blob/e8086878f261c7590bbacb4a0ad829f9fa099543/src/main/index.js#L18-L20 "Source code on GitHub")
+[src/main/index.ts:21-24](https://github.com/bbeesley/async-fs/blob/53e02259be0aba3b70a870eb1a076bddc5153b15/src/main/index.ts#L21-L24 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -50,7 +50,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncReaddir
 
-[src/main/index.js:27-29](https://github.com/bbeesley/async-fs/blob/e8086878f261c7590bbacb4a0ad829f9fa099543/src/main/index.js#L27-L29 "Source code on GitHub")
+[src/main/index.ts:31-34](https://github.com/bbeesley/async-fs/blob/53e02259be0aba3b70a870eb1a076bddc5153b15/src/main/index.ts#L31-L34 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -62,7 +62,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyFile
 
-[src/main/index.js:37-39](https://github.com/bbeesley/async-fs/blob/e8086878f261c7590bbacb4a0ad829f9fa099543/src/main/index.js#L37-L39 "Source code on GitHub")
+[src/main/index.ts:42-45](https://github.com/bbeesley/async-fs/blob/53e02259be0aba3b70a870eb1a076bddc5153b15/src/main/index.ts#L42-L45 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -75,7 +75,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### asyncCopyAllFilesInDir
 
-[src/main/index.js:47-53](https://github.com/bbeesley/async-fs/blob/e8086878f261c7590bbacb4a0ad829f9fa099543/src/main/index.js#L47-L53 "Source code on GitHub")
+[src/main/index.ts:53-67](https://github.com/bbeesley/async-fs/blob/53e02259be0aba3b70a870eb1a076bddc5153b15/src/main/index.ts#L53-L67 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
