@@ -4,8 +4,8 @@ type Path = string | Buffer;
 
 /**
  * Reads a file asynchronously
- * @param {(string|Buffer|URL|number)}  pointer Path to the file to be read
- * @returns {Promise<(string|Buffer)>}  Resolves to the content of the file
+ * @param {(string | Buffer)}  pointer Path to the file to be read
+ * @returns {Promise<Buffer>}  Resolves to the content of the file
  */
 export const asyncReadFile = (pointer: Path): Promise<Buffer> =>
   new Promise((resolve, reject) =>
@@ -14,9 +14,9 @@ export const asyncReadFile = (pointer: Path): Promise<Buffer> =>
 
 /**
  * Writes a file asynchronously
- * @param {(string|Buffer|URL|number)}  pointer Path to the file to be written
+ * @param {(string|Buffer)}  pointer Path to the file to be written
  * @param {(string|Buffer|Uint8Array)}  content Content to write to the file
- * @returns {Promise<boolean>}                  Resolves with true if the write was successful
+ * @returns {Promise<void>}                  Resolves with true if the write was successful
  */
 export const asyncWriteFile = (pointer: Path, content: any): Promise<void> =>
   new Promise((resolve, reject) =>
@@ -25,8 +25,8 @@ export const asyncWriteFile = (pointer: Path, content: any): Promise<void> =>
 
 /**
  * Reads a directory asynchronously
- * @param {(string|Buffer|URL)}     path    The directory to list the contents of
- * @returns {Promise<(string[]|Buffer[])>}  Array of filenames
+ * @param {(string|Buffer)}     path    The directory to list the contents of
+ * @returns {Promise<string[]>}  Array of filenames
  */
 export const asyncReaddir = (path: Path): Promise<string[]> =>
   new Promise((resolve, reject) =>
@@ -35,9 +35,9 @@ export const asyncReaddir = (path: Path): Promise<string[]> =>
 
 /**
  * Copy a file asynchronously
- * @param {(string|Buffer|URL)} from    The src file
- * @param {(string|Buffer|URL)} to      The dest file
- * @returns {Promise<boolean>}          Resolves with true if the copy is successful
+ * @param {(string|Buffer)} from    The src file
+ * @param {(string|Buffer)} to      The dest file
+ * @returns {Promise<void>}          Resolves with true if the copy is successful
  */
 export const asyncCopyFile = (from: Path, to: Path): Promise<void> =>
   new Promise((resolve, reject) =>
@@ -46,8 +46,8 @@ export const asyncCopyFile = (from: Path, to: Path): Promise<void> =>
 
 /**
  * Copy all files in one directory to another directory
- * @param {string}  from    Input directory
- * @param {string}  to      Output directory
+ * @param {(string|Buffer)}  from    Input directory
+ * @param {(string|Buffer)}  to      Output directory
  * @returns {Promise<void>} Resolves when the op is complete
  */
 export const asyncCopyAllFilesInDir = async (
