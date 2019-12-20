@@ -10,15 +10,11 @@ jobs:
 
     steps:
       - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
 
       - run: npm ci
 
-      # - run: git fetch --tags
-      # - run: npx commitlint --from $(git describe --abbrev=0 --tags)
+      - run: git fetch --tags
+      - run: npx commitlint --from $(git describe --abbrev=0 --tags)
 
       - save_cache:
           paths:
@@ -27,8 +23,8 @@ jobs:
 
       - run: npm test
 
-      # - codecov/upload:
-      #     file: coverage/lcov.info
+      - codecov/upload:
+          file: coverage/lcov.info
 
       - persist_to_workspace:
           root: ~/repo
