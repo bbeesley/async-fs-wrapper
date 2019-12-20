@@ -1,24 +1,25 @@
 {
     "presets": [
         [
-            "env",
+            "@babel/preset-env",
             {
                 "targets": {
-                    "node": "8.5"
+                    "node": "10.16"
                 },
-                "useBuiltIns": true
+                "corejs": 3,
+                "useBuiltIns": "usage"
             }
-        ],
-        "stage-0"
+        ]
     ],
     "plugins": [
-        "transform-runtime",
-        "transform-flow-strip-types"
+        "@babel/plugin-transform-flow-strip-types",
+        "@babel/plugin-transform-runtime"
     ],
     "env": {
         "test": {
             "plugins": [
-                "rewire"
+                "babel-plugin-rewire",
+                "istanbul"
             ]
         }
     },
