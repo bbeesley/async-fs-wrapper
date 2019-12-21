@@ -66,4 +66,39 @@ describe('async-fs-wrapper', () => {
       expect(JSON.parse(pack).name).toEqual('async-fs-wrapper');
     });
   });
+  describe('asyncMkDir', () => {
+    it('creates a directory', async () => {
+      await fs.asyncMkDir('./foo.test.output');
+      const res = await fs.asyncReaddir('./foo.test.output');
+      expect(Array.isArray(res)).toBeTruthy();
+    });
+    it('throws if the path exists', async () => {
+      let err;
+      try {
+        await fs.asyncMkDir('./foo.test.output');
+      } catch (e) {
+        err = e;
+      }
+      expect(err).toBeDefined();
+    });
+  });
+  describe('asyncRmDir', () => {
+    it('removes a directory', async () => {
+      await fs.asyncMkDir('./asyncMkDir.test.output');
+      let res = await fs.asyncReaddir('./');
+      expect(res.includes('asyncMkDir.test.output')).toBeTruthy();
+      await fs.asyncRmDir('./asyncMkDir.test.output');
+      res = await fs.asyncReaddir('./');
+      expect(res.includes('asyncMkDir.test.output')).toBeFalsy();
+    });
+    it('throws if the path does not exist', async () => {
+      let err;
+      try {
+        await fs.asyncRmDir('./asyncMkDir.foo.test.output');
+      } catch (e) {
+        err = e;
+      }
+      expect(err).toBeDefined();
+    });
+  });
 });
