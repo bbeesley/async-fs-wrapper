@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/bbeesley/async-fs/compare/v1.4.0...v1.5.0) (2019-12-21)
+
+
+### Features
+
+* **methods:** add rmdir and mkdir methods ([a7bfbf0](https://github.com/bbeesley/async-fs/commit/a7bfbf008ea25bc5080f96df7fa0d06a65896396))
+
 # [1.4.0](https://github.com/bbeesley/async-fs/compare/v1.3.1...v1.4.0) (2019-12-21)
 
 
