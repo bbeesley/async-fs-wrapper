@@ -1,4 +1,4 @@
-import { readFile, writeFile, readdir, copyFile } from 'fs';
+import { readFile, writeFile, readdir, copyFile, mkdir, rmdir } from 'fs';
 
 type Path = string | Buffer;
 
@@ -65,3 +65,23 @@ export const asyncCopyAllFilesInDir = async (
     )
   );
 };
+
+/**
+ * Create a directory
+ * @param {(string|Buffer)} pointer Path to the directory to create
+ * @returns {Promise<void>} Resolves when the op is complete
+ */
+export const asyncMkDir = async (pointer: Path): Promise<void> =>
+  new Promise((resolve, reject) =>
+    mkdir(pointer, err => (err ? reject(err) : resolve()))
+  );
+
+/**
+ * Remove a directory
+ * @param {(string|Buffer)} pointer Path to the directory to remove
+ * @returns {Promise<void>} Resolves when the op is complete
+ */
+export const asyncRmDir = async (pointer: Path): Promise<void> =>
+  new Promise((resolve, reject) =>
+    rmdir(pointer, err => (err ? reject(err) : resolve()))
+  );
