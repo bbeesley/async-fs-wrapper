@@ -37,12 +37,31 @@ describe('async-fs-wrapper', () => {
       const res = await fs.asyncReaddir('./');
       expect(res.includes('package.json')).toBeTruthy();
     });
+    it('throws if the path does not exist', async () => {
+      let err;
+      try {
+        await fs.asyncReaddir('foo');
+      } catch (e) {
+        err = e;
+      }
+      expect(err).toBeDefined();
+    });
   });
   describe('asyncCopyFile', () => {
-    it('copies a file', async () => {
+    it('copies a file using string paths', async () => {
       await fs.asyncCopyFile('./package.json', './asyncCopyFile.test.output');
       const pack = (
         await fs.asyncReadFile('./asyncCopyFile.test.output')
+      ).toString();
+      expect(JSON.parse(pack).name).toEqual('async-fs-wrapper');
+    });
+    it('copies a file using buffer paths', async () => {
+      await fs.asyncCopyFile(
+        Buffer.from('./package.json'),
+        Buffer.from('./asyncCopyFileBuffer.test.output')
+      );
+      const pack = (
+        await fs.asyncReadFile('./asyncCopyFileBuffer.test.output')
       ).toString();
       expect(JSON.parse(pack).name).toEqual('async-fs-wrapper');
     });

@@ -12,9 +12,7 @@
             }
         ]
     ],
-    "plugins": [
-        "@babel/plugin-transform-runtime"
-    ],
+    "plugins": [],
     "env": {
         "test": {
             "plugins": []
