@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/bbeesley/async-fs/compare/v2.1.1...v2.2.0) (2019-12-22)
+
+
+### Features
+
+* **readdir:** allow passing options opject ([05e5965](https://github.com/bbeesley/async-fs/commit/05e596598a45ee98ce1b1ff7a7828b5f4f41719e))
+
 ## [2.1.1](https://github.com/bbeesley/async-fs/compare/v2.1.0...v2.1.1) (2019-12-22)
 
 # [2.1.0](https://github.com/bbeesley/async-fs/compare/v2.0.0...v2.1.0) (2019-12-22)
