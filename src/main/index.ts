@@ -34,13 +34,20 @@ export const readFile = (
 export const writeFile = (pointer: Path, content: any): Promise<void> =>
   wrap(fs.writeFile, pointer, content);
 
+type ReadDirOptions = {
+  encoding?: string;
+  withFileTypes?: string;
+};
 /**
  * Reads a directory asynchronously
  * @param {(string|Buffer)}     path    The directory to list the contents of
+ * @param {ReadDirOptions} [options={}] Options opject to pass to readdir
  * @returns {Promise<string[]>}  Array of filenames
  */
-export const readdir = (path: Path): Promise<string[]> =>
-  wrap(fs.readdir, path);
+export const readdir = (
+  path: Path,
+  options: ReadDirOptions = {}
+): Promise<string[]> => wrap(fs.readdir, path, options);
 
 /**
  * Copy a file asynchronously
