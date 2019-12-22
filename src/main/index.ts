@@ -95,3 +95,12 @@ export const mkdir = async (pointer: Path): Promise<void> =>
  */
 export const rmdir = async (pointer: Path): Promise<void> =>
   wrap(fs.rmdir, pointer);
+
+/**
+ * Tests a user's permissions for the file or directory specified by pointer.
+ * @param {(string|Buffer)} pointer - Path to the file to test
+ * @param {number} [mode] - File access mode
+ * @returns {Promise<void>}
+ */
+export const access = async (pointer: Path, mode = 0): Promise<void> =>
+  wrap(fs.access, pointer, mode);
