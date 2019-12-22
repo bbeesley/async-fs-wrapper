@@ -1,3 +1,5 @@
+## [2.1.1](https://github.com/bbeesley/async-fs/compare/v2.1.0...v2.1.1) (2019-12-22)
+
 # [2.1.0](https://github.com/bbeesley/async-fs/compare/v2.0.0...v2.1.0) (2019-12-22)
 
 
