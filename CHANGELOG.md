@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/bbeesley/async-fs/compare/v2.0.0...v2.1.0) (2019-12-22)
+
+
+### Features
+
+* **method:** add the fs.access method ([42dc04c](https://github.com/bbeesley/async-fs/commit/42dc04cfd82221e884486125687f8a94aefc3641))
+
 # [2.0.0](https://github.com/bbeesley/async-fs/compare/v1.5.0...v2.0.0) (2019-12-22)
 
 

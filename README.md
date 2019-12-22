@@ -33,7 +33,7 @@ Async wrappers for node's filesystem module
 
 ### Song
 
-[src/main/index.ts:10-10](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L3-L9 "Source code on GitHub")
+[src/main/index.ts:10-10](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L3-L9 "Source code on GitHub")
 
 A path
 
@@ -47,7 +47,7 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 ### readFile
 
-[src/main/index.ts:30-33](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L30-L33 "Source code on GitHub")
+[src/main/index.ts:30-33](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L30-L33 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -60,7 +60,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### writeFile
 
-[src/main/index.ts:41-42](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L41-L42 "Source code on GitHub")
+[src/main/index.ts:41-42](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L41-L42 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -73,7 +73,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### readdir
 
-[src/main/index.ts:49-50](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L49-L50 "Source code on GitHub")
+[src/main/index.ts:49-50](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L49-L50 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -85,7 +85,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### copyFile
 
-[src/main/index.ts:58-59](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L58-L59 "Source code on GitHub")
+[src/main/index.ts:58-59](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L58-L59 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -98,7 +98,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### copyAllFilesInDir
 
-[src/main/index.ts:67-81](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L67-L81 "Source code on GitHub")
+[src/main/index.ts:67-81](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L67-L81 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
@@ -111,7 +111,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### mkdir
 
-[src/main/index.ts:88-89](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L88-L89 "Source code on GitHub")
+[src/main/index.ts:88-89](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L88-L89 "Source code on GitHub")
 
 Create a directory
 
@@ -123,7 +123,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### rmdir
 
-[src/main/index.ts:96-97](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L96-L97 "Source code on GitHub")
+[src/main/index.ts:96-97](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L96-L97 "Source code on GitHub")
 
 Remove a directory
 
@@ -135,7 +135,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### access
 
-[src/main/index.ts:105-106](https://github.com/bbeesley/async-fs/blob/0ffdc820f10d3f73239e7df197eaf30dd7c4bd68/src/main/index.ts#L105-L106 "Source code on GitHub")
+[src/main/index.ts:105-106](https://github.com/bbeesley/async-fs/blob/fb73e0f2a6298f8b2842f4317e5d31688def7e00/src/main/index.ts#L105-L106 "Source code on GitHub")
 
 Tests a user's permissions for the file or directory specified by pointer.
 
