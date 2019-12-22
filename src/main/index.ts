@@ -36,7 +36,7 @@ export const writeFile = (pointer: Path, content: any): Promise<void> =>
 
 type ReadDirOptions = {
   encoding?: string;
-  withFileTypes?: string;
+  withFileTypes?: boolean;
 };
 /**
  * Reads a directory asynchronously
