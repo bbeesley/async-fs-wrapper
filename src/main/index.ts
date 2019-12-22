@@ -1,12 +1,5 @@
 import * as fs from 'fs';
 
-/**
- * A path
- * @typedef {Object} Song
- * @property {string} title - The title
- * @property {string} artist - The artist
- * @property {number} year - The year
- */
 type Path = string | Buffer;
 type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
 type GenericFn = (...args: any[]) => any;
