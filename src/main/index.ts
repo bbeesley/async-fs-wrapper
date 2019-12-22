@@ -38,16 +38,35 @@ type ReadDirOptions = {
   encoding?: string;
   withFileTypes?: boolean;
 };
+type ReadDirOptionsFileEntries = {
+  encoding?: string;
+  withFileTypes: true;
+};
+type ReadDirOptionsStrings = {
+  encoding?: string;
+  withFileTypes?: false;
+};
 /**
  * Reads a directory asynchronously
  * @param {(string|Buffer)}     path    The directory to list the contents of
  * @param {ReadDirOptions} [options={}] Options opject to pass to readdir
  * @returns {Promise<string[]>}  Array of filenames
  */
-export const readdir = (
+export function readdir(path: Path): Promise<string[]>;
+export function readdir(
+  path: Path,
+  options: ReadDirOptionsStrings
+): Promise<string[]>;
+export function readdir(
+  path: Path,
+  options: ReadDirOptionsFileEntries
+): Promise<fs.Dirent[]>;
+export function readdir(
   path: Path,
   options: ReadDirOptions = {}
-): Promise<string[]> => wrap(fs.readdir, path, options);
+): Promise<string[] | fs.Dirent[]> {
+  return wrap(fs.readdir, path, options);
+}
 
 /**
  * Copy a file asynchronously
