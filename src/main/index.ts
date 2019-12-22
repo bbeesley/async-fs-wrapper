@@ -38,6 +38,9 @@ type ReadDirOptions = {
   encoding?: string;
   withFileTypes?: boolean;
 };
+type ReadDirReturn<T> = T extends { withFileTypes: true }
+  ? Promise<FileEntry>
+  : Promise<string[]>;
 /**
  * Reads a directory asynchronously
  * @param {(string|Buffer)}     path    The directory to list the contents of
@@ -47,7 +50,7 @@ type ReadDirOptions = {
 export const readdir = (
   path: Path,
   options: ReadDirOptions = {}
-): Promise<string[]> => wrap(fs.readdir, path, options);
+): Promise<ReadDirReturn<ReadDirOptions>> => wrap(fs.readdir, path, options);
 
 /**
  * Copy a file asynchronously
