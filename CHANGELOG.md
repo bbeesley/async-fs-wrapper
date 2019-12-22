@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/bbeesley/async-fs/compare/v1.5.0...v2.0.0) (2019-12-22)
+
+
+### Features
+
+* **exports:** exported fn names now match fs fn names ([b0ed998](https://github.com/bbeesley/async-fs/commit/b0ed998b4d74b0958709ae828e561d6446f85660))
+
+
+### BREAKING CHANGES
+
+* **exports:** All exported functions renamed
+
 # [1.5.0](https://github.com/bbeesley/async-fs/compare/v1.4.0...v1.5.0) (2019-12-21)
 
 
