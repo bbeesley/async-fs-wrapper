@@ -101,4 +101,24 @@ describe('async-fs-wrapper', () => {
       expect(err).toBeDefined();
     });
   });
+  describe('access', () => {
+    it('tests a file is accessible', async () => {
+      let err;
+      try {
+        await fs.access('./package.json');
+      } catch (e) {
+        err = e;
+      }
+      expect(err).toBeUndefined();
+    });
+    it('throws if the file does not exist', async () => {
+      let err;
+      try {
+        await fs.access('./packages.json');
+      } catch (e) {
+        err = e;
+      }
+      expect(err).toBeDefined();
+    });
+  });
 });
