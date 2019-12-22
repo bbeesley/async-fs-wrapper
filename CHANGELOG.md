@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/bbeesley/async-fs/compare/v2.2.0...v2.2.1) (2019-12-22)
+
+
+### Bug Fixes
+
+* **readdir:** correct a type definition ([32a1e36](https://github.com/bbeesley/async-fs/commit/32a1e36fb7c1a4784dcc1f6be1071cee206d8d6c))
+
 # [2.2.0](https://github.com/bbeesley/async-fs/compare/v2.1.1...v2.2.0) (2019-12-22)
 
 
