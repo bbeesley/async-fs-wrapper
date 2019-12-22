@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/bbeesley/async-fs/compare/v2.2.1...v2.2.2) (2019-12-22)
+
+
+### Bug Fixes
+
+* **readdir:** fix dynamic readdir return type ([3c7e2cb](https://github.com/bbeesley/async-fs/commit/3c7e2cb287b19a26050ed51d88542cdc2dff3742))
+
 ## [2.2.1](https://github.com/bbeesley/async-fs/compare/v2.2.0...v2.2.1) (2019-12-22)
 
 

@@ -31,7 +31,7 @@ Async wrappers for node's filesystem module
 
 ### readFile
 
-[src/main/index.ts:23-26](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L23-L26 "Source code on GitHub")
+[src/main/index.ts:23-26](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L23-L26 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -44,7 +44,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### writeFile
 
-[src/main/index.ts:34-35](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L34-L35 "Source code on GitHub")
+[src/main/index.ts:34-35](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L34-L35 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -57,7 +57,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### readdir
 
-[src/main/index.ts:55-55](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L55-L55 "Source code on GitHub")
+[src/main/index.ts:55-55](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L55-L55 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -70,7 +70,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### copyFile
 
-[src/main/index.ts:77-78](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L77-L78 "Source code on GitHub")
+[src/main/index.ts:77-78](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L77-L78 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -83,7 +83,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### copyAllFilesInDir
 
-[src/main/index.ts:86-100](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L86-L100 "Source code on GitHub")
+[src/main/index.ts:86-100](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L86-L100 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
@@ -96,7 +96,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### mkdir
 
-[src/main/index.ts:107-108](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L107-L108 "Source code on GitHub")
+[src/main/index.ts:107-108](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L107-L108 "Source code on GitHub")
 
 Create a directory
 
@@ -108,7 +108,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### rmdir
 
-[src/main/index.ts:115-116](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L115-L116 "Source code on GitHub")
+[src/main/index.ts:115-116](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L115-L116 "Source code on GitHub")
 
 Remove a directory
 
@@ -120,7 +120,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### access
 
-[src/main/index.ts:124-125](https://github.com/bbeesley/async-fs/blob/3c7e2cb287b19a26050ed51d88542cdc2dff3742/src/main/index.ts#L124-L125 "Source code on GitHub")
+[src/main/index.ts:124-125](https://github.com/bbeesley/async-fs/blob/07401bba21dd846d6ca4564205999f29726628c6/src/main/index.ts#L124-L125 "Source code on GitHub")
 
 Tests a user's permissions for the file or directory specified by pointer.
 
