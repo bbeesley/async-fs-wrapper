@@ -12,36 +12,53 @@ Async wrappers for node's filesystem module
 
 #### Table of Contents
 
--   [asyncReadFile](#asyncreadfile)
+-   [Song](#song)
+    -   [Properties](#properties)
+-   [readFile](#readfile)
     -   [Parameters](#parameters)
--   [asyncWriteFile](#asyncwritefile)
+-   [writeFile](#writefile)
     -   [Parameters](#parameters-1)
--   [asyncReaddir](#asyncreaddir)
+-   [readdir](#readdir)
     -   [Parameters](#parameters-2)
--   [asyncCopyFile](#asynccopyfile)
+-   [copyFile](#copyfile)
     -   [Parameters](#parameters-3)
--   [asyncCopyAllFilesInDir](#asynccopyallfilesindir)
+-   [copyAllFilesInDir](#copyallfilesindir)
     -   [Parameters](#parameters-4)
--   [asyncMkDir](#asyncmkdir)
+-   [mkdir](#mkdir)
     -   [Parameters](#parameters-5)
--   [asyncRmDir](#asyncrmdir)
+-   [rmdir](#rmdir)
     -   [Parameters](#parameters-6)
 
-### asyncReadFile
+### Song
 
-[src/main/index.ts:10-13](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L10-L13 "Source code on GitHub")
+[src/main/index.ts:10-10](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L3-L9 "Source code on GitHub")
+
+A path
+
+Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+#### Properties
+
+-   `title` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The title
+-   `artist` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The artist
+-   `year` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** The year
+
+### readFile
+
+[src/main/index.ts:30-33](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L30-L33 "Source code on GitHub")
 
 Reads a file asynchronously
 
 #### Parameters
 
 -   `pointer` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** Path to the file to be read
+-   `options` **ReadFileOptions**  (optional, default `{}`)
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Buffer](https://nodejs.org/api/buffer.html)>** Resolves to the content of the file
 
-### asyncWriteFile
+### writeFile
 
-[src/main/index.ts:21-24](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L21-L24 "Source code on GitHub")
+[src/main/index.ts:41-42](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L41-L42 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -52,9 +69,9 @@ Writes a file asynchronously
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves with true if the write was successful
 
-### asyncReaddir
+### readdir
 
-[src/main/index.ts:31-34](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L31-L34 "Source code on GitHub")
+[src/main/index.ts:49-50](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L49-L50 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -64,9 +81,9 @@ Reads a directory asynchronously
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>>** Array of filenames
 
-### asyncCopyFile
+### copyFile
 
-[src/main/index.ts:42-45](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L42-L45 "Source code on GitHub")
+[src/main/index.ts:58-59](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L58-L59 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -77,9 +94,9 @@ Copy a file asynchronously
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves with true if the copy is successful
 
-### asyncCopyAllFilesInDir
+### copyAllFilesInDir
 
-[src/main/index.ts:53-67](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L53-L67 "Source code on GitHub")
+[src/main/index.ts:67-81](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L67-L81 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
@@ -90,9 +107,9 @@ Copy all files in one directory to another directory
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves when the op is complete
 
-### asyncMkDir
+### mkdir
 
-[src/main/index.ts:74-77](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L74-L77 "Source code on GitHub")
+[src/main/index.ts:88-89](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L88-L89 "Source code on GitHub")
 
 Create a directory
 
@@ -102,9 +119,9 @@ Create a directory
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves when the op is complete
 
-### asyncRmDir
+### rmdir
 
-[src/main/index.ts:84-87](https://github.com/bbeesley/async-fs/blob/3c4970b00856f9b333ed3ce53799411042b087eb/src/main/index.ts#L84-L87 "Source code on GitHub")
+[src/main/index.ts:96-97](https://github.com/bbeesley/async-fs/blob/a06f1540ffed4f78189b7c5e60a07aac45449ba5/src/main/index.ts#L96-L97 "Source code on GitHub")
 
 Remove a directory
 
