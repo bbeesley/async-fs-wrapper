@@ -14,16 +14,36 @@ type ReadFileOptions = {
   flag?: string;
 };
 
+type StringReadFileOptions = {
+  encoding: string;
+  flag?: string;
+};
+
+type BufferReadFileOptions = {
+  encoding: undefined;
+  flag?: string;
+};
+
 /**
  * Reads a file asynchronously
  * @param {(string | Buffer)}  pointer Path to the file to be read
  * @param {ReadFileOptions} [options={}]
  * @returns {Promise<Buffer>}  Resolves to the content of the file
  */
-export const readFile = (
+export function readFile(
+  pointer: Path,
+  options: StringReadFileOptions
+): Promise<string>;
+export function readFile(
+  pointer: Path,
+  options: BufferReadFileOptions
+): Promise<Buffer>;
+export function readFile(
   pointer: Path,
   options: ReadFileOptions = {}
-): Promise<Buffer> => wrap(fs.readFile, pointer, options);
+): Promise<Buffer | string> {
+  return wrap(fs.readFile, pointer, options);
+}
 
 /**
  * Writes a file asynchronously
