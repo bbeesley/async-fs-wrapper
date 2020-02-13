@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/bbeesley/async-fs/compare/v2.3.0...v2.4.0) (2020-02-13)
+
+
+### Features
+
+* **unlink:** add unlink method ([36cfa7f](https://github.com/bbeesley/async-fs/commit/36cfa7f5f22fc60fbe76eccae330f64cb3e32360))
+
 # [2.3.0](https://github.com/bbeesley/async-fs/compare/v2.2.2...v2.3.0) (2020-02-13)
 
 
