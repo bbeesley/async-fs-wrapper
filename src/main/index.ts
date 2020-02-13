@@ -10,7 +10,7 @@ const wrap = (fn: GenericFn, ...args: any): Promise<ReturnType<GenericFn>> =>
   );
 
 type ReadFileOptions = {
-  encoding?: null;
+  encoding?: string;
   flag?: string;
 };
 
@@ -123,3 +123,5 @@ export const rmdir = async (pointer: Path): Promise<void> =>
  */
 export const access = async (pointer: Path, mode = 0): Promise<void> =>
   wrap(fs.access, pointer, mode);
+
+export { createReadStream, createWriteStream } from 'fs';
