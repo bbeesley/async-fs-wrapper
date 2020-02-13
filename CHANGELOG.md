@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/bbeesley/async-fs/compare/v2.2.2...v2.3.0) (2020-02-13)
+
+
+### Features
+
+* export stream methods from fs ([7c2544e](https://github.com/bbeesley/async-fs/commit/7c2544eace0a7b3e6154fa5fac4d3cf6e39c8320))
+
 ## [2.2.2](https://github.com/bbeesley/async-fs/compare/v2.2.1...v2.2.2) (2019-12-22)
 
 
