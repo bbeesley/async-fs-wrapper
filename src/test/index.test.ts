@@ -32,6 +32,34 @@ describe('async-fs-wrapper', () => {
       expect(err).toBeDefined();
     });
   });
+  describe('unlink', () => {
+    it('removes a file', async () => {
+      await fs.writeFile('./asyncWriteFile.test.output', 'foo');
+      let error;
+      try {
+        await fs.readFile('./asyncWriteFile.test.output');
+      } catch (e) {
+        error = e;
+      }
+      expect(error).toBeUndefined();
+      await fs.unlink('./asyncWriteFile.test.output');
+      try {
+        await fs.readFile('./asyncWriteFile.test.output');
+      } catch (e) {
+        error = e;
+      }
+      expect(error).not.toBeUndefined();
+    });
+    it('throws if the path is not set', async () => {
+      let err;
+      try {
+        await fs.unlink(null);
+      } catch (e) {
+        err = e;
+      }
+      expect(err).toBeDefined();
+    });
+  });
   describe('readdir', () => {
     it('reads a dir', async () => {
       const res = await fs.readdir('./');

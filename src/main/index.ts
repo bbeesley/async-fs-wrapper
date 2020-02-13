@@ -124,4 +124,12 @@ export const rmdir = async (pointer: Path): Promise<void> =>
 export const access = async (pointer: Path, mode = 0): Promise<void> =>
   wrap(fs.access, pointer, mode);
 
+/**
+ * Asynchronously removes a file or symbolic link.
+ * @param {Path} pointer - Path to the file to remove
+ * @returns {Promise<void>}
+ */
+export const unlink = async (pointer: Path): Promise<void> =>
+  wrap(fs.unlink, pointer);
+
 export { createReadStream, createWriteStream } from 'fs';
