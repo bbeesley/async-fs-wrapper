@@ -30,6 +30,7 @@ type BufferReadFileOptions = {
  * @param {ReadFileOptions} [options={}]
  * @returns {Promise<Buffer>}  Resolves to the content of the file
  */
+export function readFile(pointer: Path): Promise<Buffer>;
 export function readFile(
   pointer: Path,
   options: StringReadFileOptions
