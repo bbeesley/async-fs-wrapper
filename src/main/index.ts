@@ -114,7 +114,7 @@ export const copyAllFilesInDir = async (
   const outputDir = to.replace(/\/$/, '');
   const rawFileNames = await readdir(inputDir);
   await Promise.all(
-    rawFileNames.map(filename =>
+    rawFileNames.map((filename) =>
       copyFile(`${inputDir}/${filename}`, `${outputDir}/${filename}`)
     )
   );
