@@ -52,8 +52,10 @@ export function readFile(
  * @param {(string|Buffer|Uint8Array)}  content Content to write to the file
  * @returns {Promise<void>}                  Resolves with true if the write was successful
  */
-export const writeFile = (pointer: Path, content: any): Promise<void> =>
-  wrap(fs.writeFile, pointer, content);
+export const writeFile = (
+  pointer: Path,
+  content: string | ArrayBufferView
+): Promise<void> => wrap(fs.writeFile, pointer, content);
 
 type ReadDirOptions = {
   encoding?: string;
