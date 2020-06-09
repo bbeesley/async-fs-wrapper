@@ -133,8 +133,10 @@ export const mkdir = async (pointer: Path): Promise<void> =>
  * @param {(string|Buffer)} pointer Path to the directory to remove
  * @returns {Promise<void>} Resolves when the op is complete
  */
-export const rmdir = async (pointer: Path): Promise<void> =>
-  wrap(fs.rmdir, pointer);
+export const rmdir = async (
+  pointer: Path,
+  opts?: fs.RmDirOptions
+): Promise<void> => wrap(fs.rmdir, pointer, opts);
 
 /**
  * Tests a user's permissions for the file or directory specified by pointer.

@@ -1,20 +1,18 @@
 {
   "compilerOptions": {
-      "baseUrl": ".",
-      "declaration": true,
-      "esModuleInterop": true,
-      "lib": ["es6", "es2020", "dom"],
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "noImplicitAny": true,
-      "outDir": "dist",
-      "sourceMap": true,
-      "target": "es6",
-      "paths": {
-          "*": [
-              "node_modules/*"
-          ]
-      }
+    "declaration": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": ["ESNext", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "target": "ESNext",
+    "outDir": "./dist/",
+    "preserveConstEnums": true,
+    "resolveJsonModule": true
   },
   "include": [
       "src/main/**/*"
