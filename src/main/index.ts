@@ -138,7 +138,8 @@ export const mkdir = async (pointer: Path): Promise<void> =>
 export const rmdir = async (
   pointer: Path,
   opts?: fs.RmDirOptions
-): Promise<void> => wrap(fs.rmdir, pointer, opts);
+): Promise<void> =>
+  opts ? wrap(fs.rmdir, pointer, opts) : wrap(fs.rmdir, pointer);
 
 /**
  * Tests a user's permissions for the file or directory specified by pointer.
