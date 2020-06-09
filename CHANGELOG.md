@@ -1,3 +1,15 @@
+# [2.5.0](https://github.com/bbeesley/async-fs/compare/v2.4.2...v2.5.0) (2020-06-09)
+
+
+### Bug Fixes
+
+* **rmdir:** dont pass opts if undefined ([5e9bf5e](https://github.com/bbeesley/async-fs/commit/5e9bf5e1ddff5b08564d2dcad4885b38fdcd9475))
+
+
+### Features
+
+* **rmdir:** pass through rmdir options ([f75e00c](https://github.com/bbeesley/async-fs/commit/f75e00c744cd848b2923cc6040c7cc91a3446edc))
+
 ## [2.4.2](https://github.com/bbeesley/async-fs/compare/v2.4.1...v2.4.2) (2020-02-13)
 
 ## [2.4.1](https://github.com/bbeesley/async-fs/compare/v2.4.0...v2.4.1) (2020-02-13)
