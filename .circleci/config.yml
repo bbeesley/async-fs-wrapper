@@ -25,6 +25,7 @@ jobs:
 
       - codecov/upload:
           file: coverage/lcov.info
+          conf: .codecov.yml
 
       - persist_to_workspace:
           root: ~/repo
