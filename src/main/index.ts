@@ -52,8 +52,10 @@ export function readFile(
  * @param {(string|Buffer|Uint8Array)}  content Content to write to the file
  * @returns {Promise<void>}                  Resolves with true if the write was successful
  */
-export const writeFile = (pointer: Path, content: any): Promise<void> =>
-  wrap(fs.writeFile, pointer, content);
+export const writeFile = (
+  pointer: Path,
+  content: string | ArrayBufferView
+): Promise<void> => wrap(fs.writeFile, pointer, content);
 
 type ReadDirOptions = {
   encoding?: string;
@@ -133,8 +135,11 @@ export const mkdir = async (pointer: Path): Promise<void> =>
  * @param {(string|Buffer)} pointer Path to the directory to remove
  * @returns {Promise<void>} Resolves when the op is complete
  */
-export const rmdir = async (pointer: Path): Promise<void> =>
-  wrap(fs.rmdir, pointer);
+export const rmdir = async (
+  pointer: Path,
+  opts?: fs.RmDirOptions
+): Promise<void> =>
+  opts ? wrap(fs.rmdir, pointer, opts) : wrap(fs.rmdir, pointer);
 
 /**
  * Tests a user's permissions for the file or directory specified by pointer.
