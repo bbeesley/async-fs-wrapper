@@ -12,11 +12,5 @@
             }
         ]
     ],
-    "plugins": [],
-    "env": {
-        "test": {
-            "plugins": []
-        }
-    },
     "sourceMaps": true
 }
