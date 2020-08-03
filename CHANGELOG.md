@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/bbeesley/async-fs/compare/v2.5.0...v2.5.1) (2020-08-03)
+
+
+### Bug Fixes
+
+* **deps:** patch all security issues ([92c1800](https://github.com/bbeesley/async-fs/commit/92c1800eca469e9ef3d2374d8178205eb0c46765))
+
 # [2.5.0](https://github.com/bbeesley/async-fs/compare/v2.4.2...v2.5.0) (2020-06-09)
 
 
