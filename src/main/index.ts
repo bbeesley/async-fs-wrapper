@@ -57,6 +57,17 @@ export const writeFile = (
   content: string | ArrayBufferView
 ): Promise<void> => wrap(fs.writeFile, pointer, content);
 
+/**
+ * Appends to a file asynchronously
+ * @param {(string|Buffer)}  pointer Path to the file to be written
+ * @param {(string|Buffer|Uint8Array)}  content Content to write to the file
+ * @returns {Promise<void>}                  Resolves with true if the write was successful
+ */
+export const appendFile = (
+  pointer: Path,
+  content: string | ArrayBufferView
+): Promise<void> => wrap(fs.appendFile, pointer, content);
+
 type ReadDirOptions = {
   encoding?: string;
   withFileTypes?: boolean;
