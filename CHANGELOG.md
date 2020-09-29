@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/bbeesley/async-fs/compare/v2.5.1...v2.6.0) (2020-09-29)
+
+
+### Features
+
+* **append-file:** adds the append file method ([a06aa17](https://github.com/bbeesley/async-fs/commit/a06aa17f33f2234dc4d5ddb1681c456f38977da9))
+
 ## [2.5.1](https://github.com/bbeesley/async-fs/compare/v2.5.0...v2.5.1) (2020-08-03)
 
 

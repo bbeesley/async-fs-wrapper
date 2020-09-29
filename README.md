@@ -16,24 +16,26 @@ Async wrappers for node's filesystem module
     -   [Parameters](#parameters)
 -   [writeFile](#writefile)
     -   [Parameters](#parameters-1)
--   [readdir](#readdir)
+-   [appendFile](#appendfile)
     -   [Parameters](#parameters-2)
--   [copyFile](#copyfile)
+-   [readdir](#readdir)
     -   [Parameters](#parameters-3)
--   [copyAllFilesInDir](#copyallfilesindir)
+-   [copyFile](#copyfile)
     -   [Parameters](#parameters-4)
--   [mkdir](#mkdir)
+-   [copyAllFilesInDir](#copyallfilesindir)
     -   [Parameters](#parameters-5)
--   [rmdir](#rmdir)
+-   [mkdir](#mkdir)
     -   [Parameters](#parameters-6)
--   [access](#access)
+-   [rmdir](#rmdir)
     -   [Parameters](#parameters-7)
--   [unlink](#unlink)
+-   [access](#access)
     -   [Parameters](#parameters-8)
+-   [unlink](#unlink)
+    -   [Parameters](#parameters-9)
 
 ### readFile
 
-[src/main/index.ts:33-33](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L33-L33 "Source code on GitHub")
+[src/main/index.ts:33-33](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L33-L33 "Source code on GitHub")
 
 Reads a file asynchronously
 
@@ -46,7 +48,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### writeFile
 
-[src/main/index.ts:55-58](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L55-L58 "Source code on GitHub")
+[src/main/index.ts:55-58](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L55-L58 "Source code on GitHub")
 
 Writes a file asynchronously
 
@@ -57,9 +59,22 @@ Writes a file asynchronously
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves with true if the write was successful
 
+### appendFile
+
+[src/main/index.ts:66-69](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L66-L69 "Source code on GitHub")
+
+Appends to a file asynchronously
+
+#### Parameters
+
+-   `pointer` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html))** Path to the file to be written
+-   `content` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Buffer](https://nodejs.org/api/buffer.html) \| [Uint8Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array))** Content to write to the file
+
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;void>** Resolves with true if the write was successful
+
 ### readdir
 
-[src/main/index.ts:78-78](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L78-L78 "Source code on GitHub")
+[src/main/index.ts:89-89](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L89-L89 "Source code on GitHub")
 
 Reads a directory asynchronously
 
@@ -72,7 +87,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### copyFile
 
-[src/main/index.ts:100-101](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L100-L101 "Source code on GitHub")
+[src/main/index.ts:111-112](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L111-L112 "Source code on GitHub")
 
 Copy a file asynchronously
 
@@ -85,7 +100,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### copyAllFilesInDir
 
-[src/main/index.ts:109-123](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L109-L123 "Source code on GitHub")
+[src/main/index.ts:120-134](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L120-L134 "Source code on GitHub")
 
 Copy all files in one directory to another directory
 
@@ -98,7 +113,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### mkdir
 
-[src/main/index.ts:130-131](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L130-L131 "Source code on GitHub")
+[src/main/index.ts:141-142](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L141-L142 "Source code on GitHub")
 
 Create a directory
 
@@ -110,7 +125,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### rmdir
 
-[src/main/index.ts:138-142](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L138-L142 "Source code on GitHub")
+[src/main/index.ts:149-153](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L149-L153 "Source code on GitHub")
 
 Remove a directory
 
@@ -123,7 +138,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### access
 
-[src/main/index.ts:150-151](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L150-L151 "Source code on GitHub")
+[src/main/index.ts:161-162](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L161-L162 "Source code on GitHub")
 
 Tests a user's permissions for the file or directory specified by pointer.
 
@@ -136,7 +151,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### unlink
 
-[src/main/index.ts:158-159](https://github.com/bbeesley/async-fs/blob/7ee2350524fd89945c271dbf3b2cb61a64700590/src/main/index.ts#L158-L159 "Source code on GitHub")
+[src/main/index.ts:169-170](https://github.com/bbeesley/async-fs/blob/941fc9b1a5063bedbac422514fd04cf5488a173c/src/main/index.ts#L169-L170 "Source code on GitHub")
 
 Asynchronously removes a file or symbolic link.
 
