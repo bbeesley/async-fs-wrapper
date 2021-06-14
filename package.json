@@ -1,6 +1,6 @@
 {
   "name": "async-fs-wrapper",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "Async wrappers for node's filesystem module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
