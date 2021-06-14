@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/bbeesley/async-fs.svg?style=svg)](https://circleci.com/gh/bbeesley/async-fs) [![codecov](https://codecov.io/gh/bbeesley/async-fs/branch/master/graph/badge.svg)](https://codecov.io/gh/bbeesley/async-fs) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![test-and-publish](https://github.com/bbeesley/async-fs/actions/workflows/test-and-publish.yml/badge.svg)](https://github.com/bbeesley/async-fs/actions/workflows/test-and-publish.yml) [![codecov](https://codecov.io/gh/bbeesley/async-fs/branch/master/graph/badge.svg)](https://codecov.io/gh/bbeesley/async-fs) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 # async-fs-wrapper
 
@@ -12,26 +12,30 @@ Async wrappers for node's filesystem module
 
 #### Table of Contents
 
--   [readFile](#readfile)
-    -   [Parameters](#parameters)
--   [writeFile](#writefile)
-    -   [Parameters](#parameters-1)
--   [appendFile](#appendfile)
-    -   [Parameters](#parameters-2)
--   [readdir](#readdir)
-    -   [Parameters](#parameters-3)
--   [copyFile](#copyfile)
-    -   [Parameters](#parameters-4)
--   [copyAllFilesInDir](#copyallfilesindir)
-    -   [Parameters](#parameters-5)
--   [mkdir](#mkdir)
-    -   [Parameters](#parameters-6)
--   [rmdir](#rmdir)
-    -   [Parameters](#parameters-7)
--   [access](#access)
-    -   [Parameters](#parameters-8)
--   [unlink](#unlink)
-    -   [Parameters](#parameters-9)
+- [async-fs-wrapper](#async-fs-wrapper)
+  - [description](#description)
+  - [api](#api)
+      - [Table of Contents](#table-of-contents)
+    - [readFile](#readfile)
+      - [Parameters](#parameters)
+    - [writeFile](#writefile)
+      - [Parameters](#parameters-1)
+    - [appendFile](#appendfile)
+      - [Parameters](#parameters-2)
+    - [readdir](#readdir)
+      - [Parameters](#parameters-3)
+    - [copyFile](#copyfile)
+      - [Parameters](#parameters-4)
+    - [copyAllFilesInDir](#copyallfilesindir)
+      - [Parameters](#parameters-5)
+    - [mkdir](#mkdir)
+      - [Parameters](#parameters-6)
+    - [rmdir](#rmdir)
+      - [Parameters](#parameters-7)
+    - [access](#access)
+      - [Parameters](#parameters-8)
+    - [unlink](#unlink)
+      - [Parameters](#parameters-9)
 
 ### readFile
 

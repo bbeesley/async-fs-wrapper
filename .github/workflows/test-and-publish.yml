@@ -74,7 +74,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PA_TOKEN }}
         run: |
-          npm run documentation
+          npm run compile
           npm run release
       # - name: publish-esm
       #   env:
