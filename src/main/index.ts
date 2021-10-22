@@ -138,8 +138,12 @@ export const copyAllFilesInDir = async (
  * @param {(string|Buffer)} pointer Path to the directory to create
  * @returns {Promise<void>} Resolves when the op is complete
  */
-export const mkdir = async (pointer: Path): Promise<void> =>
-  wrap(fs.mkdir, pointer);
+export const mkdir = async (
+  pointer: Path,
+  opts?: fs.MakeDirectoryOptions & {
+    recursive: true;
+  }
+): Promise<void> => wrap(fs.mkdir, pointer, opts);
 
 /**
  * Remove a directory

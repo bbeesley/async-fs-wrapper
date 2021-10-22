@@ -100,6 +100,11 @@ describe('async-fs-wrapper', () => {
       const res = await fs.readdir('./foo.test.output');
       expect(Array.isArray(res)).toBeTruthy();
     });
+    it('creates a directory recursively', async () => {
+      await fs.mkdir('./foo.test.output/nested'), { recursive: true };
+      const res = await fs.readdir('./foo.test.output/nested');
+      expect(Array.isArray(res)).toBeTruthy();
+    });
     it('throws if the path exists', async () => {
       let err;
       try {
