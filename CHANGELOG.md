@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/bbeesley/async-fs/compare/v2.6.2...v2.7.0) (2021-10-22)
+
+
+### Features
+
+* add support for recursive mkdir ([bf7a5ed](https://github.com/bbeesley/async-fs/commit/bf7a5eda036bf91d95c80eb0018d37b6e466103e))
+
 ## [2.6.2](https://github.com/bbeesley/async-fs/compare/v2.6.1...v2.6.2) (2021-06-25)
 
 ## [2.6.1](https://github.com/bbeesley/async-fs/compare/v2.6.0...v2.6.1) (2021-06-14)
