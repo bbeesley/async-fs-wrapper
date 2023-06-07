@@ -47,7 +47,7 @@
     "@typescript-eslint/parser": "^4.27.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.0.0",
-    "conventional-changelog-angular": "^5.0.12",
+    "conventional-changelog-angular": "^6.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "documentation": "^14.0.0",
     "eslint": "^7.28.0",
