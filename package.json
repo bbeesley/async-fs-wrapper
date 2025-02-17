@@ -40,7 +40,7 @@
     "@semantic-release/npm": "^10.0.2",
     "@semantic-release/release-notes-generator": "^11.0.1",
     "@types/filesystem": "0.0.32",
-    "@types/filewriter": "0.0.29",
+    "@types/filewriter": "0.0.33",
     "@types/jest": "^27.0.0",
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
